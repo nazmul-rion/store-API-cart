@@ -17,10 +17,9 @@ const showProducts = (products) => {
       <p class="card-text"><b>Category:</b> ${product.category}</p>
       <p><b>Rating:</b> ${product.rating.rate} <span><i class="fas fa-star text-warning"></i></span> (Total ${product.rating.count})</p>
       <h4>Price: $  ${product.price}</h4>
-      <div class="d-flex">
-        <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success me-3">add to
-          cart</button>
-        <button id="details-btn" class="btn btn-danger">Details</button>
+      <div class="d-flex flex-column flex-lg-row">
+        <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success mx-2 my-lg-0 my-2">add to cart</button>
+        <button id="details-btn" class="btn btn-danger my-lg-0 my-2 mx-2">Details</button>
       </div>
     </div>
   </div>`;
